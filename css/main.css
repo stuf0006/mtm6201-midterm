@@ -6,10 +6,19 @@ body {
     padding: 0;
     color: #333; /* Set default text color to a dark color for readability */
 }
+.skip-link {
+    position: absolute;
+    top: -40px; /* Position it off-screen */
+    left: 0;
+    background: #000; /* Background color */
+    color: #fff; /* Text color */
+    padding: 8px; /* Padding for clickable area */
+    z-index: 100; /* Ensure it's above other content */
+    text-decoration: none; /* Remove underline */
+}
 
-.wrapper {
-    width: 100%;
-    overflow: hidden; /* Prevent overflow */
+.skip-link:focus {
+    top: 0; /* Bring it back into view */
 }
 
 .container {
@@ -502,18 +511,7 @@ nav {
 
 
 }
-.Skip-link {Position :absolute;
-    top: -50;
-    left: 0;
-    background: BLack;
-    color: white;
-    padding: 9;
-    z-index: 110;
-    text-decoration: none;
 
-}
-.skip-link:focus {
-    top:0;}
 
 .nav-item a:hover {
     background-color:#d69e3d; 
