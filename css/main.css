@@ -1,0 +1,280 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#000000; /* Dark background for the header */   
+}
+.nav-itema:hover {
+    color: #d69e3d;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+nav .brand .logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+}
+
+ .nav-ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+ .nav li {
+    margin-bottom: 0.5rem;
+    margin-right: 2rem;
+}
+
+
+/* explore Section */
+.explore-container{
+   
+    align-items: center;
+    background: url('../images/hero-background.jpg') no-repeat center center/cover;
+    padding: 4rem 1rem;
+    height: 600px;
+    width: 100%;
+    margin-bottom: 60px;
+  
+}
+
+.Explore h1 {
+    color:var(--white);
+    text-transform: uppercase;
+    margin-bottom:40px;
+}
+
+.explore p {
+    color:var(--white);
+    padding: 0 50px;
+   margin-bottom: 20px;
+}
+
+.explore button {
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    padding: 0.5rem 2rem ;
+    cursor: pointer;
+    width: auto; 
+    display: inline-block; 
+    }
+
+.welcome {
+    padding: 0 10px;
+    margin-bottom: 70px;
+}
+
+.welcome h2 {
+    padding-right: 100px;
+}
+
+
+.company img container {
+    display: flex;
+    flex-direction: column;
+}
+
+.company img{
+    width: 100%;
+}
+
+.img {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.offer p {
+    margin: 20px;
+}
+.offer h2, h3 {
+    margin: 30px;
+}
+
+.product container{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.product {
+    padding-top:20px;
+    padding-bottom:20px;
+    margin: 20px;
+
+}
+.product img {
+    width: 100%;
+    height: 170px;
+}
+
+
+.container-explore {
+    background-image: url("../images/coffee-shop.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.container-explore p {
+    margin: 0px;
+}
+.container-explorer h2, h3 {
+    margin: 10px;
+}
+
+.explore {
+    background-color:#181818ae;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.menu,
+.locations {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.menu h2,
+.locations h2{
+    color: var(--white);
+}
+
+#clear-btn{
+    background-color: transparent;
+    border: solid 1px var(--white);
+    color: var(--white);
+}
+
+/* Container About Us */
+.container-about {
+    padding: 0 10px;
+    margin-bottom: 70px;
+}
+
+.container-about p {
+    margin-top: 0px;
+}
+.container-about h2 {
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+.about-story {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#black-btn {
+    background-color: var(--black);
+    border: none;
+    color: var(--white);
+}
+
+/*  */
+.container-testimonials client {
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px 10px;
+}
+
+.container-testimonials p {
+    margin: 0;
+}
+
+.testimonials h2{
+    color:var(--white);
+    margin-top: 10px;
+    padding-right: 100px;
+}
+
+.client-testimonials {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.testimonial {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.testimonial img {
+    width: 100%;
+  
+    height: 100%; 
+    object-fit: cover;}
+
+
+
+.testimonial p {
+    color: var(--white);
+    padding: 0 20px;
+}
+
+.testimonial 1 {
+    color: var(--light);
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.testimonial {
+    position: relative;
+    top: -140px;
+}
+
+.footer {
+    padding-top: 40px;  
+    padding-bottom: 40px; 
+    background-color: var(--black);
+    text-align: center;
+}
+
+.footer p {
+    color: var(--white);
+}  this my css code please write the html code
