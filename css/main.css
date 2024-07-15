@@ -478,7 +478,7 @@ nav {
 
 .container-about .about h1 {
     font-size: 0.8rem;
-    color: var(dark-yellow); 
+    color: #d69e3d; ; 
     
 }
 
@@ -502,3 +502,23 @@ nav {
 
 
 }
+.Skip-link {Position :absolute;
+    top: -50;
+    left: 0;
+    background: BLack;
+    color: white;
+    padding: 9;
+    z-index: 110;
+    text-decoration: none;
+
+}
+.skip-link:focus {
+    top:0;}
+
+.nav-item a:hover {
+    background-color:#d69e3d; 
+  }
+  
+  .nav-item a:focus{
+    background-color:#d69e3d ; 
+  }
