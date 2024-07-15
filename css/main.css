@@ -75,12 +75,21 @@ nav {
     font-weight: bold;
     font-size: 1.2rem;
     text-transform: uppercase;
+    animation: blink 1s infinite; 
 }
 
 .nav-item a:hover {
-    text-decoration: underline;
+    background-color: #966f2c;
+    padding: 20px;
 }
-
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    25%, 75% {
+        opacity: 0; /* Invisible */
+    }
+}
 /* Hero Section */
 .explore-container {
     text-align: center;
