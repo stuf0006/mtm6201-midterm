@@ -13,7 +13,7 @@ header {
     text-align: center;
     line-height: 100px; /* Adjust to vertically center the text */
   }
-.nav-itema:hover {
+.nav-itema a:hover {
     color: #d69e3d;
 }
 nav {
@@ -60,6 +60,23 @@ nav .brand .logo {
     width: 100%;
     margin-bottom: 60px;
   
+}
+#Welcome-to-my-coffee-house{
+    background-color: #f3f0e9;
+}
+
+#What-we-offer {
+    background-color: #f3f0e9;    
+}
+#Our-Menu {
+    background-color: #f3f0e9;    
+}
+#About-us {
+    background-color: #f3f0e9;
+}
+#Testimonials { 
+     background-color: #000000;
+
 }
 
 .Explore h1 {
