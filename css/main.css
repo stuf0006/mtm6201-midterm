@@ -87,7 +87,7 @@ nav {
         opacity: 1; /* Fully visible */
     }
     25%, 75% {
-        opacity: 0; /* Invisible */
+        opacity: 0; /* make it invisible */
     }
 }
 /* Hero Section */
