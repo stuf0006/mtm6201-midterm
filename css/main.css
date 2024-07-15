@@ -5,6 +5,14 @@ header {
     align-items: center;
     background-color:#000000; /* Dark background for the header */   
 }
+.text{
+    position: relative;
+    z-index: 2;
+    font-size: 2em; /* Adjust font size as needed */
+    color:#ffffff ; /* Adjust text color as needed */
+    text-align: center;
+    line-height: 100px; /* Adjust to vertically center the text */
+  }
 .nav-itema:hover {
     color: #d69e3d;
 }
@@ -277,4 +285,4 @@ nav .brand .logo {
 
 .footer p {
     color: var(--white);
-}  this my css code please write the html code
+}  
