@@ -21,6 +21,11 @@ body {
     top: 0; /* Bring it back into view */
 }
 
+.wrapper {
+    width: 100%;
+    overflow: hidden; /* Prevent overflow */
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -400,7 +405,7 @@ nav {
     }
     
     /* Offer Section */
-.offer-grid {
+.offer-box {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto auto;
@@ -409,35 +414,35 @@ nav {
     align-items: start;
 }
 
-.offer-grid .product:nth-child(1) {
+.offer-box .product:nth-child(1) {
     grid-column: span 3; 
     grid-row: 1;
     justify-self: start;
 }
 
-.offer-grid .product:nth-child(2) {
+.offer-box .product:nth-child(2) {
     grid-column: 4 / span 3; 
     grid-row: 1;
     justify-self: end;
 }
 
-.offer-grid .product:nth-child(3) {
+.offer-box .product:nth-child(3) {
     grid-column: span 6; 
     grid-row: 2;
     justify-self: center;
 }
 
-.offer-grid .product img {
+.offer-box .product img {
     margin: 0 auto 1rem;
 }
 
-.offer-grid .product h4 {
+.offer-box .product h4 {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
 }
 
-.offer-grid .product p {
+.offer-box .product p {
     font-size: 1rem;
     color: #333;
     text-align: center;
@@ -487,7 +492,7 @@ nav {
 
 .container-about .about h1 {
     font-size: 0.8rem;
-    color: #d69e3d; ; 
+    color: var(dark-yellow); 
     
 }
 
@@ -508,15 +513,27 @@ nav {
     margin: 20px;
 
 }
-
-
 }
 
 
-.nav-item a:hover {
-    background-color:#d69e3d; 
-  }
+    
+/* Desktop View */
+@media (min-width: 1100px) {
+    .offer-box {
+        display: flex;
+        justify-content: space-around; /* Distribute space around items */
+        align-items: center; /* Center items vertically */
+        text-align: center; /* Center text inside items */
+        gap: 20px; /* Space between items */
+    }
+
+    .offer .product {
+        flex: 1; /* Allow items to grow and fill the space */
+        max-width: 300px; /* Optional: Limit the maximum width of each item */
+    }
+
   
-  .nav-item a:focus{
-    background-color:#d69e3d ; 
-  }
+   
+}
+
+
