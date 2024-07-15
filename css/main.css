@@ -1,305 +1,331 @@
-/* Header */
+/* General Styles */
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #f3f0e9;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Set default text color to a dark color for readability */
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header and Navigation */
 header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color:#000000; /* Dark background for the header */   
 }
-.text{
-    position: relative;
-    z-index: 2;
-    font-size: 2em; /* Adjust font size as needed */
-    color:#ffffff ; /* Adjust text color as needed */
-    text-align: center;
-    line-height: 100px; /* Adjust to vertically center the text */
-  }
-.nav-itema a:hover {
-    color: #d69e3d;
+
+.logo {
+    display: flex;
+    align-items: center;
 }
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
 nav {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 0;
 }
 
-nav .logo {
+.nav-ul {
     display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-nav .brand .logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 0.5rem;
-}
-
- .nav-ul {
-    display: flex;
-    flex-direction: row;
     list-style: none;
-    padding: 0;
     margin: 0;
-
+    padding: 0;
 }
 
- .nav li {
-    margin-bottom: 0.5rem;
-    margin-right: 2rem;
+.nav-item {
+    margin-left: 2rem;
 }
 
-
-/* explore Section */
-.explore-container{
-   
-    align-items: center;
-    background: url('../images/hero-background.jpg') no-repeat center center/cover;
-    padding: 4rem 1rem;
-    height: 600px;
-    width: 100%;
-    margin-bottom: 60px;
-  
-}
-#Welcome-to-my-coffee-house{
-    background-color: #f3f0e9;
-}
-
-#What-we-offer {
-    background-color: #f3f0e9;    
-}
-#Our-Menu {
-    background-color: #f3f0e9;    
-}
-#About-us {
-    background-color: #f3f0e9;
-}
-#Testimonials { 
-     background-color: #000000;
-
-}
-
-.Explore h1 {
-    color:var(--white);
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    margin-bottom:40px;
 }
 
-.explore p {
-    color:var(--white);
-    padding: 0 50px;
-   margin-bottom: 20px;
+.nav-item a:hover {
+    text-decoration: underline;
 }
 
-.explore button {
-    background-color: var(--white);
-    color: var(--black);
+/* Hero Section */
+.explore-container {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: url('..//images/hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+}
+
+
+.explore-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.explore-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.explore-container .button {
+    background-color: white;
+    color: black;
     border: none;
-    padding: 0.5rem 2rem ;
+    padding: 0.5rem 2rem;
     cursor: pointer;
-    width: auto; 
-    display: inline-block; 
-    }
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+.explore-container .button:hover {
+    background-color: #966f2c;
+    color: #fff;
+}
+
+
+
+/* Welcome Section */
 .welcome {
-    padding: 0 10px;
-    margin-bottom: 70px;
+    margin: 2rem 0;
+    text-align: center;
 }
 
-.welcome h2 {
-    padding-right: 100px;
-}
-
-
-.company img container {
-    display: flex;
-    flex-direction: column;
-}
-
-.company img{
-    width: 100%;
-}
-
-.img {
-    margin-top: 10px;
+.welcome .image-gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;}
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.welcome .image-gallery img:first-child {
+    grid-column: span 2; 
+}
+
+.welcome .image-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.welcome .welcome-content {
+    margin-top: 2rem;
+}
+
+.welcome-content h1 {
+    color: #d69e3d;
+    text-transform: uppercase;
+}
+
+.welcome-content p {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+
+
+/* Offer Section */
 
 .offer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-.offer p {
-    margin: 20px;
-}
-.offer h2, h3 {
-    margin: 30px;
+    text-align: center;
+    margin: 2rem 0;
 }
 
-.product container{
-    
-    display: flex;
-    flex-direction: column;
+.offer h1 {
+    color: #d69e3d;
+    text-transform: uppercase;
     text-align: center;
-    justify-content: center;
+}
+
+.offer p {
+    font-size: 1.2rem;
+    color: #333;
 }
 
 .product {
-    padding-top:20px;
-    padding-bottom:20px;
-    margin: 20px;
-
-}
-.product img {
-    width: 100%;
-    height: 170px;
-}
-
-
-.container-explore {
-    background-image: url("../images/coffee-shop.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    height: 650px;
-    width: 100%;
     display: flex;
-    margin-bottom: 90px;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.product p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+/* Menu and Locations Section */
+.container-explore {
+    background: url('..//images/coffee-shop.jpeg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.container-explore::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.container-explore .explore {
+    position: relative;
+    z-index: 2;
+}
+
+.container-explore h1 {
+    color: #d69e3d;
+    text-transform: uppercase;
 }
 
 .container-explore p {
-    margin: 0px;
-}
-.container-explorer h2, h3 {
-    margin: 10px;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
-.explore {
-    background-color:#181818ae;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 30px;
+.container-explore .button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1rem 0;
 }
 
-.menu,
-.locations {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.container-explore .button:hover {
+    background-color: #966f2c;
+    color: #fff;
 }
 
-.menu h2,
-.locations h2{
-    color: var(--white);
-}
-
-#clear-btn{
-    background-color: transparent;
-    border: solid 1px var(--white);
-    color: var(--white);
-}
-
-/* Container About Us */
+/* About Us Section */
 .container-about {
-    padding: 0 10px;
-    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.container-about img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.container-about .about {
+    max-width: 600px;
+}
+
+.container-about h1 {
+    color: #d69e3d;
+    text-transform: uppercase;
 }
 
 .container-about p {
-    margin-top: 0px;
-}
-.container-about h2 {
-    margin: 0px;
-    padding-bottom: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
-.about {
-    display: flex;
-    flex-direction: column;
-}
-
-.about-img img{
-    width: 100%;
-}
-
-.about-story {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#black-btn {
-    background-color: var(--black);
+.container-about .button {
+    background-color: #000;
+    color: #fff;
     border: none;
-    color: var(--white);
+    padding: 0.8rem 2.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-/*  */
-.container-testimonials client {
-    background-color: var(--black);
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 40px 10px;
+.container-about .button:hover {
+    background-color: #860a0a;
+}
+
+/* Testimonials Section */
+
+ .container-testimonials {
+    text-align: center;
+    background-color: #000;
+    margin: 2rem 0;
+}
+
+.container-testimonials h1 {
+    color: #d69e3d;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 .container-testimonials p {
-    margin: 0;
-}
-
-.testimonials h2{
-    color:var(--white);
-    margin-top: 10px;
-    padding-right: 100px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: left;
 }
 
 .client-testimonials {
     display: flex;
-    flex-direction: column; 
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.testimonial {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    
-}
+/* .testimonial {
+    width: calc(100% / 3 - 1rem);
+    margin: 1rem 0;
+} */
 
 .testimonial img {
     width: 100%;
-  
-    height: 100%; 
-    object-fit: cover;}
-
-
-
-.testimonial p {
-    color: var(--white);
-    padding: 0 20px;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
-.testimonial 1 {
-    color: var(--light);
-    padding: 0 20px;
+.testimonial h2 {
+    font-size: 1rem;
     text-transform: uppercase;
+    margin-top: 0.5rem;
+    color: #d69e3d;
 }
 
-.testimonial {
-    position: relative;
-    top: -140px;
-}
-
+/* Footer */
 .footer {
-    padding-top: 40px;  
-    padding-bottom: 40px; 
-    background-color: var(--black);
     text-align: center;
-}
-
-.footer p {
-    color: var(--white);
-}  
+    padding: 1rem 0;
+    background-color: #000;
+    color: #fff;
+} 
